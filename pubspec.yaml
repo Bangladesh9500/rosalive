@@ -1,20 +1,21 @@
 
 name: rosalive
-description: Rosa Live Test App
-publish_to: "none"
+description: Only live room app
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  zego_uikit_prebuilt_live_streaming: ^3.9.0
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/logo.png
